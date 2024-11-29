@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {MainStyle, DivFuncional, Copo} from "./style"
+import {MainStyle, DivFuncional, Copo, Button, Span, Text, Titulo} from "./style"
 export default function App() {
   //estado para controlar o café selecionado:
   const [copoSelecionado, setCompoSelecionado] = useState(
@@ -17,17 +17,17 @@ export default function App() {
   return (
     <MainStyle>
       <section>
-        <h2>Mais que Café</h2>
-        <h2>
-          Isso é <span>Starbucks</span>
-        </h2>
-        <p>
+        <Titulo>Mais que Café</Titulo>
+        <Titulo>
+          Isso é <Span>Starbucks</Span>
+        </Titulo>
+        <Text>
           A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns
           dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o
           Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas
           quentes e frias, doces diferenciados e sanduíches.
-        </p>
-        <button>SAIBA MAIS</button>
+        </Text>
+        <Button>SAIBA MAIS</Button>
         <div>
           <img
             src="https://github.com/mariaccarolina/desafioSurpresa/blob/main/src/assets/images/amarelo.png?raw=true"
